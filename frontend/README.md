@@ -28,44 +28,7 @@ Security teams are overwhelmed by the volume of vulnerability disclosures. This 
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────┐
-│                   React Frontend                     │
-│  ┌──────────┐  ┌──────────┐  ┌───────────────────┐  │
-│  │ Severity  │  │  Source   │  │   Threat Table    │  │
-│  │  Charts   │  │  Charts  │  │  with Filters     │  │
-│  └──────────┘  └──────────┘  └───────────────────┘  │
-│  ┌───────────────────────────────────────────────┐   │
-│  │          AI Analysis Panel                     │   │
-│  │  Summary │ Priority │ Per-CVE Breakdown       │   │
-│  └───────────────────────────────────────────────┘   │
-└──────────────────────┬──────────────────────────────┘
-                       │ HTTP (fetch)
-                       ▼
-┌─────────────────────────────────────────────────────┐
-│                 FastAPI Backend                       │
-│                                                      │
-│  GET /threats       - List & filter vulnerabilities  │
-│  GET /threats/stats - Severity & source counts       │
-│  GET /analyze       - AI-powered threat briefing     │
-└─────┬───────────────────────────────────┬───────────┘
-      │                                   │
-      ▼                                   ▼
-┌──────────────┐                 ┌─────────────────┐
-│   SQLite DB   │                │   Claude AI API  │
-│  (threats.db) │                │  (Anthropic)     │
-└──────┬───────┘                 └─────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────────────────────┐
-│              Data Ingestion Pipeline                  │
-│                                                      │
-│  ┌─────────────────┐    ┌──────────────────────┐    │
-│  │   NVD Fetcher    │    │   CISA KEV Fetcher    │    │
-│  │  (CVE database)  │    │ (Exploited vulns)     │    │
-│  └─────────────────┘    └──────────────────────┘    │
-└─────────────────────────────────────────────────────┘
-```
+![architecture Screenshot](docs/threat-intel-archdiagram.png_files)
 
 ---
 
