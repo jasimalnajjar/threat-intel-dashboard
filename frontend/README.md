@@ -28,7 +28,7 @@ Security teams are overwhelmed by the volume of vulnerability disclosures. This 
 
 ## Architecture
 
-![Architecture Diagram](docs/threat-intel-archdiagram.png.html)
+![Architecture Diagram](docs/threat-intel-archdiagram.png)
 
 ---
 
