@@ -8,8 +8,8 @@ An AI-powered threat intelligence platform that aggregates OSINT feeds, uses Cla
 ![Claude AI](https://img.shields.io/badge/Claude_AI-Anthropic-6B4FBB)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-![Dashboard Screenshot](docs/screenshot1.png)
-![Dashboard Screenshot](docs/screenshot2.png)
+![Dashboard Screenshot](frontend/docs/screenshot1.png)
+![Dashboard Screenshot](frontend/docs/screenshot2.png)
 
 ---
 
@@ -28,7 +28,7 @@ Security teams are overwhelmed by the volume of vulnerability disclosures. This 
 
 ## Architecture
 
-[Architecture Diagram](frontend/docs/architecture1.svg)
+![Architecture Diagram](frontend/docs/architecture1.svg)
 
 ---
 
