@@ -181,7 +181,7 @@ threat-intel-dashboard/
 - [ ] Semantic search using embeddings and a vector database
 - [ ] MITRE ATT&CK framework mapping visualization
 - [ ] Scheduled auto-ingestion with APScheduler
-- [ ] Dockerized deployment with Docker Compose
+- [x] Dockerized deployment with Docker Compose
 - [ ] Threat trend analysis over time
 - [ ] Email/Slack alerting for critical threats
 - [ ] User authentication and role-based access
